@@ -1,4 +1,4 @@
-# INFINITE IMAGE SCROLL
+# Infinite Image Scroll
 
 This application was built using [Picsum Photos](https://picsum.photos/)
 

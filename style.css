@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+/* box-sizing: prevents padding from adding extra-width */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  /*Make image stay in center*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /*Targeting x, y axis; */
+  /*Without this, the top-left part of the image will be center, but using 'translate' we are centering the image*/
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  .image-container {
+    margin: 10px;
+  }
+}
